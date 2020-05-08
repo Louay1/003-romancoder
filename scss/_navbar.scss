@@ -1,0 +1,50 @@
+
+$primary: #247BA0;
+$secondary: #70C1B3;
+$dark-2 :#30312F;
+$dark-3: #191818;
+$third: #F25F5C;
+$font-one: #FFE066;
+
+.navbar-main{
+    //display: grid;
+    //grid-template: 0 / repeat(4, 1fr);
+    //grid-template: "home cont logo about contact";
+    //align-items: center;
+    //justify-items: center;
+    //grid-gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: $dark-2;
+    .nav-item{
+        padding: 10px;
+        margin: 0 20px;
+        height: 100%;
+        color: $font-one;
+        transition: background-color 0.2s ease-in;
+        &:hover{
+            background-color: $dark-3;
+        }
+
+    }
+
+    //.nav-item-1{
+    //    grid-area: home;
+    //}
+    //.nav-item-2{
+    //    grid-area: cont;
+    //}
+    //.nav-item-3{
+    //    grid-area: logo;
+    //}
+    //.nav-item-4{
+    //    grid-area: about;
+    //}
+    //.nav-item-5{
+    //    grid-area: contact;
+    //}
+}

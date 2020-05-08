@@ -1,0 +1,22 @@
+{
+  "name": "003-romancoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w scss -o views/css --recursive",
+    "dev": "nodemon App"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "node-sass": "^4.14.0",
+    "sass": "^1.26.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

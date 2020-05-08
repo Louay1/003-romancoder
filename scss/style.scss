@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap');
+@import 'card';
+@import 'navbar';
+@import 'about';
+@import 'content';
+@import 'foot';
+
+
+$primary: #247BA0;
+$secondary: #70C1B3;
+$dark :#50514F;
+$dark-deep :#30312F;
+$third: #F94144;
+$font-one: #FFE066;
+$font-two:#F8961E;
+:root{
+	scrollbar-width: thin;
+	scrollbar-color: $font-two $dark;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Bitter', serif;
+	background: $dark;
+	color: #fff;
+	line-height: 1.5;
+	scrollbar-width: thin;
+	scrollbar-color: $dark-deep $third;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+a{
+    color: $font-one;
+    text-decoration: none;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 40px;
+	background: rgba(0, 0, 0, 0.3);
+	padding: 30px;
+	border-bottom: 5px #fff solid;
+}
+
+.flexer{
+	margin: 50px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+h1.welcome {
+
+	margin: 10px 0;
+
+	span{
+		padding: 0;
+		&:hover{
+			color: $dark-3;
+			background: $font-two-2;
+			transition: background-color ease 0.4s;
+		}
+}
+}

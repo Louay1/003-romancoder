@@ -1,0 +1,248 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap");
+.card {
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden; }
+  .card img {
+    width: 100%;
+    object-fit: cover; }
+  .card .card-body {
+    padding: 30px; }
+    .card .card-body h1 {
+      margin-bottom: 10px; }
+    .card .card-body li {
+      line-height: 2;
+      border-bottom: #ccc solid 1px; }
+    .card .card-body li:last-child {
+      border: 0; }
+
+.navbar-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #30312F; }
+  .navbar-main .nav-item {
+    padding: 10px;
+    margin: 0 20px;
+    height: 100%;
+    color: #FFE066;
+    transition: background-color 0.2s ease-in; }
+    .navbar-main .nav-item:hover {
+      background-color: #191818; }
+
+.grid-container {
+  margin: 15px 0 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: ". romancoder romancoder romancoder ." ". bio bio bio .";
+  justify-items: center; }
+  .grid-container .roman-coder {
+    grid-area: romancoder;
+    display: grid;
+    justify-items: center; }
+    .grid-container .roman-coder .roman-pic {
+      display: inline-block;
+      position: relative;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 3px solid #F8961E; }
+      .grid-container .roman-coder .roman-pic .pic {
+        width: auto;
+        height: 100%;
+        margin-left: -62px; }
+    .grid-container .roman-coder .roman-name {
+      font-size: 25px; }
+      .grid-container .roman-coder .roman-name span {
+        font-weight: bold;
+        color: #F8961E; }
+  .grid-container .bio {
+    grid-area: bio; }
+  .grid-container .general-info {
+    grid-area: general; }
+  .grid-container h3 {
+    color: #F8961E; }
+
+.sheet {
+  background: #30312F;
+  border-radius: 10px;
+  margin-bottom: 10px; }
+  .sheet .sheet-title {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 10px;
+    background: #191818;
+    opacity: 0.9;
+    justify-content: space-between; }
+    .sheet .sheet-title i {
+      font-size: 25px;
+      color: #F8961E; }
+  .sheet .sheet-body {
+    padding: 10px; }
+
+.prefix {
+  margin: 10px 0 0 0;
+  text-align: center; }
+
+.agenda-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: rows;
+    grid-gap: 15px 10px; */
+  margin: 20px 10px; }
+  .agenda-wrap .agenda {
+    position: relative;
+    width: 249px;
+    height: 261px;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #30312F;
+    border: 2px solid #F8961E;
+    border-radius: 10px;
+    margin: 10px 8px; }
+    .agenda-wrap .agenda .agenda-body {
+      position: relative;
+      z-index: 3; }
+      .agenda-wrap .agenda .agenda-body img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover; }
+    .agenda-wrap .agenda .agenda-title {
+      padding: 9px;
+      border-top: 1px solid #F8961E; }
+      .agenda-wrap .agenda .agenda-title .author, .agenda-wrap .agenda .agenda-title .timestamps {
+        font-size: 11px; }
+        .agenda-wrap .agenda .agenda-title .author span, .agenda-wrap .agenda .agenda-title .timestamps span {
+          color: #FBB640; }
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 20px 20px;
+  grid-template-areas: "contacts stuff";
+  margin: 30px 0; }
+  .main .contacts {
+    grid-area: contacts;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 0 0 50px; }
+    .main .contacts h2 {
+      margin: 10px 0; }
+    .main .contacts .contact ul {
+      list-style-type: symbols(cyclic "🍊" "🍋" "🥕"); }
+    .main .contacts .contact li {
+      padding: 20px;
+      font-size: 22px; }
+    .main .contacts .contact span, .main .contacts .contact a {
+      color: #FBB640; }
+    .main .contacts .contact a:hover, .main .contacts .contact span:hover {
+      color: #191818;
+      background: #FBB640;
+      transition: background-color ease 0.4s; }
+  .main .resources {
+    grid-area: stuff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 0 0 50px; }
+    .main .resources h2 {
+      margin: 10px 0; }
+    .main .resources .stuff ul {
+      list-style-type: symbols(cyclic "🏓" "💻" "🧬"); }
+    .main .resources .stuff li {
+      padding: 20px;
+      font-size: 22px; }
+    .main .resources .stuff span, .main .resources .stuff a {
+      color: #FBB640; }
+    .main .resources .stuff a:hover, .main .resources .stuff span:hover {
+      color: #191818;
+      background: #FBB640;
+      transition: background-color ease 0.4s; }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #30312F; }
+
+:root {
+  scrollbar-width: thin;
+  scrollbar-color: #F8961E #50514F; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Bitter', serif;
+  background: #50514F;
+  color: #fff;
+  line-height: 1.5;
+  scrollbar-width: thin;
+  scrollbar-color: #30312F #F94144;
+  text-align: center; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: #FFE066;
+  text-decoration: none; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-bottom: 5px #fff solid; }
+
+.flexer {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+h1.welcome {
+  margin: 10px 0; }
+  h1.welcome span {
+    padding: 0; }
+    h1.welcome span:hover {
+      color: #191818;
+      background: #FBB640;
+      transition: background-color ease 0.4s; }
