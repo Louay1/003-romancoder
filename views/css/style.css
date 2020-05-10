@@ -186,6 +186,43 @@ footer {
   text-align: center;
   background-color: #30312F; }
 
+.form form {
+  width: 50%;
+  display: inline-block; }
+
+.form-input {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; }
+  .form-input label {
+    padding: 5px 0; }
+  .form-input #editor1, .form-input input[type='text'] {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #0E3859;
+    transition: border 0.3s ease-in-out; }
+    .form-input #editor1:focus, .form-input input[type='text']:focus {
+      border: 2px solid #F8961E;
+      transition: border 0.3s ease-in-out; }
+  .form-input input[type='submit'] {
+    padding: 5px;
+    margin: 10px 0;
+    font-size: 16px;
+    width: 100px;
+    background-color: #F8961E;
+    border: 0;
+    border-radius: 5px;
+    transition: border-radius 0.3s ease-in-out; }
+    .form-input input[type='submit']:hover {
+      background-color: #F8961E;
+      border-radius: 50px;
+      color: white;
+      transition: border-radius 0.3s ease-in-out; }
+
 :root {
   scrollbar-width: thin;
   scrollbar-color: #F8961E #50514F; }

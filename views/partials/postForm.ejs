@@ -1,0 +1,38 @@
+<%- include("../partials/head")-%>
+
+
+
+<div class="form">
+    <form action="#" method="post">
+        <div class="form-input">
+            <label for="">Title</label>
+            <input type="text" />
+        </div>
+
+        <div class="form-input">
+            <label for="">Post</label>
+            <textarea name="editor1" id="editor1" cols="30" rows="10">
+                Heeey
+            </textarea>
+
+
+            <script>
+                CKEDITOR.replace('editor1');
+            </script>
+        </div>
+
+        <div class="form-input">
+            <label for="">Picture</label>
+            <input type="file" />
+        </div>
+
+
+        <div class="form-input">
+            <input type="submit" value="Post!">
+        </div>
+
+    </form>
+</div>
+
+
+<%- include("../partials/foot") -%>

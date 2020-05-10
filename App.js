@@ -24,6 +24,11 @@ app.get('/contact', function(req, res){
     res.render('pages/contact')
 })
 
+// Temporary page
+app.get('/form', function(req, res){
+    res.render('partials/postForm')
+})
+
 // App usages
 app.use(express.static('views'))
 
